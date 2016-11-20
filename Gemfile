@@ -6,6 +6,7 @@ gem 'rails', '4.1.4'
 
 # Fix the conflict with the system 'rake':
 gem 'rake', '~> 0.9.6'
+gem 'rack', '= 1.5.2'
 
 # Support for databases and environment.
 # Use 'sqlite3' for testing and development and mysql and postgresql
@@ -20,11 +21,12 @@ group :development, :test do
   gem 'sqlite3'
   gem 'minitest'
   gem 'thor'
+  gem 'spring'
 end
 
 # Add support for the MySQL
 group :production, :mysql do
-  gem 'mysql2'
+  gem 'mysql2', '~> 0.3.18'
 end
 
 group :production, :postgresql do
@@ -49,10 +51,8 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
+# gem 'sdoc', '~> 0.4.0',          group: :doc
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -65,4 +65,3 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-

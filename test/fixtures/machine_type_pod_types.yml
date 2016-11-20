@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  machine_type_id: 1
+  pod_type_id: 1
+
+two:
+  machine_type_id: 2
+  pod_type_id: 2

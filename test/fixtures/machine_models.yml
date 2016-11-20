@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  machine_type_id: 1
+  water_line_comp: false
+  sku: MyString
+
+two:
+  machine_type_id: 2
+  water_line_comp: true
+  sku: MyString

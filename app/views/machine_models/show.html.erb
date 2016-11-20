@@ -1,0 +1,27 @@
+<h4><%= link_to 'Back', '/' %></h4>
+<table style="text-align: center; margin:auto">
+  <tr>
+    <td>
+      <%= image_tag(@machine_model.img, size: "100x100") %>
+      <div>Sku:<%= @machine_model.sku %></div>
+      <div>Water line compatible:<%= @machine_model.water_line_comp %></div>
+      <div>Machine Type: <%= @machine_model.machine_type.product_type %></div>
+    </td>
+  </tr>
+</table>
+
+<h4>Cross Sell </h4>
+
+<ul style="text-align: center; margin:auto">
+    <% @machine_model.cross_sell_products.each do |cross_product| %>
+        <li style="display:inline-block;">
+          <div><%= image_tag(cross_product.img , size: "100x100") %> </div>
+          <div>SKU: <%= cross_product.sku %></div>
+          <div>Pack Size: <%= cross_product.pack_size %> dozen pods</div>
+          <div>Flavor: <%= cross_product.flavor.coffee_flavor %></div>
+          <div>Pod Type: <%= cross_product.pod_type.product_type %></div>
+        </li>
+    <% end %>
+</ul>
+
+

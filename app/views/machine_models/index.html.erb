@@ -1,0 +1,23 @@
+<h1 style="width:100%; text-align: center">Coffee Machine Models</h1>
+
+<table  style="text-align: center; margin: auto;">
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @machine_models.each do |machine_model| %>
+      <tr>
+          <td> <%= image_tag(machine_model.img, size: "100x100") %></td>
+          <td>
+            <div>Sku:<%= machine_model.sku %></div>
+            <div>Water line compatible:<%= machine_model.water_line_comp %></div>
+            <div>Machine Type: <%=machine_model.machine_type.product_type %></div>
+            <div> <%= link_to 'Show',  machine_model %> </div>
+          </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
