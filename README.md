@@ -1,3 +1,10 @@
+* I just noticed  there's multiple committers on this project... I forked a rails openshift template needed for hosting and I didn't squash those template creator commits.
+   * You can see all of their contributions were from October 2015 and were just building the rails template:
+   * [https://github.com/nick-util/coffeeshop_test/graphs/contributors](https://github.com/nick-util/coffeeshop_test/graphs/contributors)
+   * [https://github.com/nick-util/coffeeshop_test/commits/master](https://github.com/nick-util/coffeeshop_test/commits/master)
+   * My squashed commmit(the work I did): [https://github.com/nick-util/coffeeshop_test/commit/f50234161ee12c960c3cc657f6d83a4a5901e603](https://github.com/nick-util/coffeeshop_test/commit/f50234161ee12c960c3cc657f6d83a4a5901e603)
+
+
 ## CoffeeShop test application
 
 * Several caveats:
@@ -9,6 +16,3 @@
     2. Class/Subclass
   2. I chose the second because for smaller complexity the first becomes an anti-pattern due to overhead
 
-* Note: I just noticed  there's multiple commiters on this project that is due to the base rails openshift template I used for hosting.
-   * You can see all of their contributions were from October 2015:
-   * [https://github.com/nick-util/coffeeshop_test/graphs/contributors](https://github.com/nick-util/coffeeshop_test/graphs/contributors)
