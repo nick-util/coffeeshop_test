@@ -1,4 +1,4 @@
-* I just noticed  there's multiple committers on this project... I forked a rails openshift template needed for hosting and I didn't squash those template creator commits.
+* I just noticed  there's multiple committers on this project... I built my app off a openshift compatible rails template and I didn't squash the template creators commits.
    * You can see all of their contributions were from October 2015 and were just building the rails template:
    * [https://github.com/nick-util/coffeeshop_test/graphs/contributors](https://github.com/nick-util/coffeeshop_test/graphs/contributors)
    * [https://github.com/nick-util/coffeeshop_test/commits/master](https://github.com/nick-util/coffeeshop_test/commits/master)
